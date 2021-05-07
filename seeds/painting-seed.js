@@ -80,6 +80,6 @@ const paintingdata = [
     },
   ];
 
-  const seedPainting = () => Painting.bulkCreate(paintingdata);
+  const seedPaintings = () => Painting.bulkCreate(paintingdata);
 
-  module.exports = seedPainting;
+  module.exports = seedPaintings;

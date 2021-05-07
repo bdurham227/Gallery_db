@@ -1,7 +1,6 @@
 const sequelize = require('../config/connection');
-
 const seedGallery = require('./gallery-seed');
-const seedPainting = require('./gallery-seed');
+const seedPaintings = require('./painting-seed');
 
 const seedAll = async () => {
 
@@ -11,7 +10,7 @@ const seedAll = async () => {
     await seedGallery();
     console.log('\n---------------GALLERY SYNCED-------------------------------');
 
-    await seedPainting();
+    await seedPaintings();
     console.log('\n---------------PAINTING SYNCED-------------------------------');
 
     process.exit(0);
